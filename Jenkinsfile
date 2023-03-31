@@ -12,7 +12,7 @@ properties(
     ]
 )
 
-node ('win2016')
+node ('RHEL8')
 {
   env.NODEJS_HOME = "${tool 'nodejs-16.14.0'}"
   env.PATH="${env.NODEJS_HOME};${env.PATH}"
