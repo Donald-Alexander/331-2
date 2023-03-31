@@ -28,7 +28,7 @@ node
     if (isManualBuild) {
       stage('Version') {
         bat "ruby -v"
-        bat "ruby IncreaseVersion.rb version.txt"
+    //    bat "ruby IncreaseVersion.rb version.txt"
         version = readFile "version.txt"
         echo "New Version: ${version}"
     }
