@@ -12,7 +12,7 @@ properties(
     ]
 )
 
-node ("Built-In Node")
+node
 {
   env.NODEJS_HOME = "${tool 'nodejs-16.14.0'}"
   env.PATH="${env.NODEJS_HOME};${env.PATH}"
