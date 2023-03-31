@@ -14,8 +14,7 @@ node
    
     stage('Version') {
        bat "git clone https://github.com/Donald-Alexander/331-2.git"
-       bat "cd 331-2"
-       bat "ruby IncreaseVersion.rb Version.txt"
+       bat "ruby ./331-2/IncreaseVersion.rb Version.txt"
     }
 
     stage('Build') {
