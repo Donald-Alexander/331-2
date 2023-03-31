@@ -1,0 +1,15 @@
+.Msrp-TogOn {
+  width: 50px;
+  border-radius: 5px;
+  margin: 2px;
+  background-color:rgb(67, 255, 255);
+  cursor: pointer; /* Pointer/hand icon */
+}
+
+.Msrp-TogOff {
+  width: 50px;
+  border-radius: 5px;
+  margin: 2px;
+  background-color:rgb(230, 238, 227);
+  cursor: pointer; /* Pointer/hand icon */
+}

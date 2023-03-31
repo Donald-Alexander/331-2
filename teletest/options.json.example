@@ -1,0 +1,56 @@
+{
+  "Description": "Add gateway address in format: x.x.x.x:nnnn",
+
+  "VccGwAddress": ["10.103.28.17:6445", "10.103.28.3:6445", "10.103.28.5:6445"],
+  "AppSrvGwAddress": ["10.103.28.17:6443"],
+  "WebRTC1": {
+    "srv1Address": "10.103.40.70",
+    "srv2Address": "10.103.40.71",
+    "sipsPort": "4443",
+    "msrpPort": "4444",
+    "rttPort": "5554",
+    "voipServers": ["voip-srv", "voip2-srv", "voip3-srv", "voip4-srv"]
+  },
+  "WebRTC2": {
+    "srv1Address": "10.103.40.80",
+    "srv2Address": "10.103.40.81",
+    "sipsPort": "4443",
+    "msrpPort": "4444",
+    "rttPort": "5554",
+    "voipServers": ["voip5-srv", "voip6-srv"]
+  },
+
+  "LineRingerPriority": [
+    { "address": "911001", "priority": 1 },
+    { "address": "911002", "priority": 2 },
+    { "address": "911003", "priority": 3 },
+    { "address": "911004", "priority": 4 }
+  ],
+
+  "RouteRingerPriority": [
+    { "address": "RG000", "priority": 3 },
+    { "address": "RG001", "priority": 4 },
+    { "address": "Q6000", "priority": 6 },
+    { "address": "Q6001", "priority": 7 }
+  ],
+
+  "ProvidedQlistTest": [
+    { "queue": "6000", "type":"Static", "penalty": 1, "skillsetFC": 1 },
+    { "queue": "6001", "type":"Dynamic", "penalty": 2, "skillsetFC": 2},
+    { "queue": "6002", "type":"DynamicOn", "penalty": 1, "skillsetFC": 2 },
+    { "queue": "6003", "type":"Static", "penalty": 3, "skillsetFC": 0 },
+    { "queue": "6004", "type":"Static", "penalty": 1, "skillsetFC": 2 },
+    { "queue": "6005", "type":"Static", "penalty": 1, "skillsetFC": 2 },
+    { "queue": "6006", "type":"Static", "penalty": 2, "skillsetFC": 2 },
+    { "queue": "6007", "type":"Static", "penalty": 1, "skillsetFC": 2 },
+    { "queue": "6008", "type":"Dynamic", "penalty": 1, "skillsetFC": 2 },
+    { "queue": "6009", "type":"DynamicOn", "penalty": 1, "skillsetFC": 2 }
+  ],
+  
+  "dynamicACDSubscribedList": [ "6000", "6001", "6002", "6003", "6004", "6005", "6606", "6007", "6008", "6009", "6010" ],
+
+  "RingerMuteOnConnect": false,
+
+  "DefaultAgentName": "user6",
+  "DefaultPositionName": "webclient61"
+}

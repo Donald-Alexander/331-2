@@ -1,0 +1,45 @@
+.tdd-window {
+  font: 'Fira Sans';
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  margin-bottom: 5px;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(95, 160, 205);
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.title {
+  padding-right: 0px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.TddLog {
+  height: 60px;
+  width: 380px;
+  margin-bottom: 5px;
+  background: white;
+  border-radius: 2px;
+  vertical-align: middle;
+  overflow: auto;
+  overflow-wrap: anywhere;
+}
+
+.ButtonPanel1 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  top: 3px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.BoldText {
+  font-weight: bold;
+}

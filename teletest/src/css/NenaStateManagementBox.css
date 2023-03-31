@@ -1,0 +1,60 @@
+.nena-state-box {
+  font: 'Fira Sans';
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  margin-bottom: 5px;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(95, 160, 205);
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.nena-reason {
+  width: 200px;
+}
+
+.title {
+  padding-right: 0px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.nena-state-data {
+  height: 150px;
+  width: 380px;
+  margin-bottom: 5px;
+  background: white;
+  border-radius: 2px;
+  vertical-align: middle;
+  overflow: auto;
+  overflow-wrap: anywhere;
+  font-weight: normal;
+  font-size: smaller;
+}
+
+.ButtonPanel1 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  top: 3px;
+  left: 10px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.button {
+  margin: 2px;
+  font-size: 12px;
+  width: 90px;
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.BoldText {
+  font-weight: bold;
+}

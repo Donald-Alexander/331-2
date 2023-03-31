@@ -1,0 +1,76 @@
+.volume-controller {
+  font: 'Fira Sans';
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  margin-bottom: 5px;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(95, 160, 205);
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.title {
+  padding-right: 0px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.title-handset {
+  font-weight: bold;
+  text-align: center;
+  width: 20%;
+}
+.title-ringer {
+  font-weight: bold;
+  text-align: center;
+  width: 40%;
+}
+.title-playback {
+  font-weight: bold;
+  text-align: center;
+  width: 40%;
+}
+
+.slider-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  -webkit-appearance: slider-vertical;
+  width: 75px;
+  height: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+.slider-header,
+.slider-foot {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.button {
+  margin: 2px;
+  font-size: 12px;
+  width: 65px;
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}

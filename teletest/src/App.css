@@ -1,0 +1,165 @@
+.App {
+  background: rgb(95, 167, 190);
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.MainPage {
+  width: 850px;
+}
+
+.CurrentCallInfo,
+.ResponseLog {
+  left: 500px;
+  height: 100px;
+  width: 900px;
+  background: white;
+  border-radius: 2px;
+  vertical-align: middle;
+  overflow: auto;
+}
+.ButtonPanel {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 100px;
+  left: 30px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.ParamPanel {
+  padding-top: 10px;
+}
+.Highlight {
+  color: blue;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.Button {
+  width: 120px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.Button2 {
+  width: 80px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.CallList ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 0px;
+  border: 1px solid;
+  border-radius: 5px;
+  display: block;
+  height: 100px;
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: pre;
+  max-width: 800px;
+}
+
+.CallList li {
+  padding: 5px;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  white-space: pre;
+  word-wrap: break-word;
+}
+
+.CallList li.selected {
+  background-color: blue;
+  color: white;
+}
+
+.ConfList ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 0px;
+  border: 1px solid;
+  border-radius: 5px;
+  display: block;
+  height: 100px;
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: pre;
+  max-width: 800px;
+}
+
+.ConfList li {
+  padding: 5px;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  white-space: pre;
+  word-wrap: break-word;
+}
+
+.ConfList li.selected {
+  background-color: blue;
+  color: white;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.dropbtn {
+  background-color: #04aa6d;
+  width: 80px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

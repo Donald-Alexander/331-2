@@ -1,0 +1,53 @@
+.LJ-Window {
+  font: 'Fira Sans';
+  width: 400px;
+  height: 110px;
+  margin: 10px;
+  margin-bottom: 5px;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(95, 160, 205);
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.LJ-Title {
+  padding-right: 0px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.LJ-BoldText {
+  font-weight: bold;
+}
+
+.LJ-Mng {
+  width: 200px;
+}
+
+.LJ-MngPos {
+  width: 100px;
+  border-radius: 0px;
+  margin: 2px;
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.LJ-TogOn {
+  width: 95px;
+  border-radius: 5px;
+  margin: 2px;
+  background-color:rgb(116 212 81 / 98%);
+  cursor: pointer; /* Pointer/hand icon */
+}
+
+.LJ-TogOff {
+  width: 95px;
+  border-radius: 5px;
+  margin: 2px;
+  background-color:rgb(230, 238, 227);
+  cursor: pointer; /* Pointer/hand icon */
+}

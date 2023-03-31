@@ -1,0 +1,47 @@
+import { Type } from './utils';
+
+/**
+ * @hidden
+ */
+function getPropertyDescriptor(obj: any, name: string) : PropertyDescriptor | undefined {
+  if (obj) {
+    return (
+      Object.getOwnPropertyDescriptor(obj, name) ||
+      getPropertyDescriptor(Object.getPrototypeOf(obj), name)
+    );
+  }
+}
+
+/**
+ * Create immutable proxies for all `properties` on `obj` proxying to `impl`.
+ * @hidden
+ */
+export function createFrozenProxy<T>(obj: object, impl: T, properties: string[]): T {
+  const missingDescriptors = properties.filter(
+    name => getPropertyDescriptor(impl, name) === undefined
+  );
+
+  if (missingDescriptors.length > 0) {
+    throw new Error(
+      `Implementation is not complete, missing properties: ${missingDescriptors.join(', ')}`
+    );
+  }
+
+  return Object.freeze(
+    properties.reduce((proxy:any, name) => {
+      const desc = getPropertyDescriptor(impl, name)
+      if (desc && 'value' in desc) {
+        if (typeof desc.value === 'function') {
+          proxy[name] = desc.value.bind(impl);
+        } else {
+          proxy[name] = desc.value;
+        }
+        return proxy;
+      } else {
+        return Object.defineProperty(proxy, name, {
+          get: (desc)?.get?.bind(impl)
+        });
+      }
+    }, obj)
+  );
+}

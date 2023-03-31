@@ -1,0 +1,70 @@
+{
+  "name": "telephony",
+  "version": "0.1.0",
+  "homepage": "telephony",
+  "private": true,
+  "dependencies": {
+    "client-web-api": "file:../p911saas.common/client-web-api",
+    "common": "file:../p911saas.common/common",
+    "crypto-js": "^4.1.1",
+    "extendable-media-recorder": "^6.3.4",
+    "extendable-media-recorder-wav-encoder": "^7.0.56",
+    "p-retry": "^4.2.0",
+    "p-timeout": "^3.2.0",
+    "sip-js": "file:./sip.js"
+  },
+  "scripts": {
+    "build": "tsc -b -v tsconfig.build.json && npm run copy:non-ts",
+    "copy:non-ts": "xcopy /f /y /I src\\webphone\\audio dist\\src\\webphone\\audio",
+    "lint": "node_modules/.bin/eslint src --ext .ts --fix",
+    "test:w": "jest --no-cache --watchAll --colors --coverage --detectOpenHandles",
+    "test": "jest",
+    "test:unit": "jest test/unit"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "testMatch": [
+      "**/*.test.ts"
+    ],
+    "moduleDirectories": [
+      "src",
+      "node_modules"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "^@src/(.*)": "<rootDir>/src/$1"
+    }
+  },
+  "devDependencies": {
+    "@types/events": "^3.0.0",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.6.3",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^26.6.3",
+    "jest-websocket-mock": "^2.2.0",
+    "mock-socket": "^9.0.3",
+    "prettier": "^2.5.1",
+    "ts-jest": "^26.4.4",
+    "typescript": "~4.3.4"
+  }
+}

@@ -1,0 +1,86 @@
+.ctihardware-window {
+  font: 'Fira Sans';
+  width: 335px;
+  height: 425px;
+  margin: 10px;
+  margin-bottom: 10px;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(95, 160, 205);
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.CtiTitle {
+  padding-right: 0px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.CtiBoldText {
+  font-weight: bold;
+}
+
+.led-green {
+  margin: 2px;
+  width: 65px;
+  height: 10px;
+  background-color: #15ff00;
+  border-radius: 2px;
+}
+
+.led-red {
+  margin: 2px;
+  width: 65px;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 2px;
+}
+
+.led-grey {
+  margin: 2px;
+  width: 65px;
+  height: 10px;
+  background-color: #6f706d;
+  border-radius: 2px;
+}
+
+.led-box {
+  margin: 2px;
+  justify-content: center;
+}
+
+.led-box p {
+  margin: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.led-box input {
+  margin: 6px;
+}
+
+.led-box button {
+  margin: 2px;
+  font-size: 12px;
+  width: 65px;
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.led-boxPanel {
+  margin: 2px;
+  width: 95%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}

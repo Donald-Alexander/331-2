@@ -1,0 +1,65 @@
+.itrr-window {
+  font: 'Fira Sans';
+  width: 335px;
+  height: 815px;
+  margin: 10px;
+  margin-bottom: 10px;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(95, 160, 205);
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.title {
+  padding-right: 0px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.ButtonPanel1 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  top: 3px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  margin: 2px;
+  font-size: 12px;
+  width: 70px;
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.BoldText {
+  font-weight: bold;
+}
+
+.boxPanel {
+  margin: 2px;
+  width: 95%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.sel {
+  width: 120px;
+  height: 25px;
+}
+
+.sectionInfo {
+  font-size: 12px;
+}

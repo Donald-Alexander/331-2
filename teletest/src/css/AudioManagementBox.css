@@ -1,0 +1,55 @@
+.audio-window {
+  font: 'Fira Sans';
+  width: 335px;
+  height: 300px;
+  margin: 10px;
+  margin-bottom: 10px;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(95, 160, 205);
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.title {
+  padding-right: 0px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.dial-holder {
+  margin-left: 5px;
+}
+
+.form-control {
+  font-size: 16px;
+  height: 35px;
+  padding-left: 10px; 
+}
+
+.dial-btn {
+  padding: 0px;
+  margin: 0px;
+  height: 35px;
+  width: 60px;
+}
+
+.TestButton {
+  width: 120px;
+  height: 25px;
+  border-radius: 5px;
+  margin: 2px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.RangeBar > * {
+  margin: 5px;
+}
+
+.Devices {
+  margin-top: 5px;
+}

@@ -1,0 +1,61 @@
+.Msrp-Window {
+  font: 'Fira Sans';
+  width: 400px;
+  height: 320px;
+  margin: 10px;
+  margin-bottom: 5px;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(95, 160, 205);
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.Msrp-Title {
+  padding-right: 0px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.Msrp-Transcript {
+  height: 175px;
+  width: 380px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background: white;
+  border-radius: 2px;
+  vertical-align: middle;
+  overflow: auto;
+  overflow-wrap: anywhere;
+}
+
+.Msrp-ButtonTextOwn {
+  width: 120px;
+  border-radius: 5px;
+  margin: 2px;
+  margin-left: 4px;
+  margin-right: 7px;
+}
+
+.Msrp-BoldText {
+  font-weight: bold;
+}
+
+.Msrp-Tx {
+  width: 380px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.Msrp-Tx-Disable {
+  width: 380px;
+  border-radius: 5px;
+  margin: 2px;
+  background-color:rgb(179, 179, 179);
+}
+
+.Msrp-SendBox {
+  width: 380px;
+}

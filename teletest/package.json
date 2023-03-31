@@ -1,0 +1,63 @@
+{
+  "name": "web-teletest",
+  "version": "0.1.0",
+  "homepage": "teletest",
+  "private": true,
+  "dependencies": {
+    "client-web-api": "file:../p911saas.common/client-web-api",
+    "crypto-js": "^4.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-select": "^3.1.0",
+    "telephony": "file:../telephony"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build:teletest": "cross-env DISABLE_ESLINT_PLUGIN=true react-app-rewired build",
+    "build": "cd ../telephony && npm run build && cd ../teletest && npm run build:teletest",
+    "test": "react-app-rewired test",
+    "postbuild": "npm run copy:config && npm run copy:version",
+    "copy:config": "xcopy /f /y options.json.example build",
+    "copy:version": "xcopy /f /y ..\\Version.txt build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "cross-env": "^7.0.3",
+    "customize-cra": "^1.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^16.1.2",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.1",
+    "react-app-rewired": "^2.2.1",
+    "react-scripts": "^4.0.3",
+    "typescript": "~4.3.4"
+  }
+}

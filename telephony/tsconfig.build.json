@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "./src/**/*.ts",
+    "package.json"
+//    "../import/p911/common/dist/index.d.ts",
+//    "../import/p911/client-web-api/dist/index.d.ts"
+  ]
+}

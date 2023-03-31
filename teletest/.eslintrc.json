@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["airbnb", "prettier", "airbnb-typescript"],
+      "plugins": ["prettier", "@typescript-eslint"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ],
+  "rules": {
+    // "prettier/prettier": "error",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "linebreak-style": "off",
+    "max-len": ["error", 180],
+    "import/extensions": ["error", "always"],
+    "max-classes-per-file": ["error", 100],
+    "prefer-arrow-callback": "error",
+    "react/destructuring-assignment": ["warn", "never", { "ignoreClassFields": true }],
+    "no-underscore-dangle": "off",
+    "import/no-cycle": "off"
+  }
+}
