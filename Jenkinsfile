@@ -14,28 +14,20 @@ properties(
 
 node
 {
-  env.NODEJS_HOME = "${tool 'nodejs-16.14.0'}"
-  env.PATH="${env.NODEJS_HOME};${env.PATH}"
-
+ 
   try {
-    def version = "1.0.0.${env.BUILD_ID}"
-    def product = 'AppSrvGW'
-
+ 
     stage('Started') {
-      echo "${JENKINS_BUILD_CAUSE}"
-
+      echo "HELLO"
     }
 
     stage('Checkout') {
-      deleteDir()
-      bat "git clone https://github.com/Intrado/cobra-telephony.git ."
+      echo "Checkout"
     }
 
     if (isManualBuild) {
       stage('Version') {
-        bat "git clone https://github.com/Intrado/gitscripts.git .gitscripts"
-        version = readFile "version.txt"
-        echo "Version before set: ${version}"
+        bat "ruby -v"
         bat "ruby .gitscripts/IncreaseVersion.rb version.txt"
         version = readFile "version.txt"
         echo "New Version: ${version}"
