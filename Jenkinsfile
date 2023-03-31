@@ -12,7 +12,7 @@ properties(
     ]
 )
 
-node ('RHEL8')
+node ("Built-In Node")
 {
   env.NODEJS_HOME = "${tool 'nodejs-16.14.0'}"
   env.PATH="${env.NODEJS_HOME};${env.PATH}"
