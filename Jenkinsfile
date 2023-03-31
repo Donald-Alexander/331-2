@@ -13,7 +13,8 @@ node
 
    
     stage('Version') {
-        bat "ruby .gitscripts/IncreaseVersion.rb Version.txt"
+       bat "git clone https://github.com/Intrado/gitscripts.git .gitscripts"
+       bat "ruby ./IncreaseVersion.rb Version.txt"
     }
 
     stage('Build') {
